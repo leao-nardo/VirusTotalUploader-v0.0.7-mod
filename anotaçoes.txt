@@ -1,0 +1,51 @@
+  Microsoft.Common.CurrentVersion.targets(1177, 5): [MSB3644] The reference assemblies for .NETFramework,Version=v4.6.1 were not found. To resolve this, install the Developer Pack (SDK/Targeting Pack) for this framework version or retarget your application. You can download .NET Framework Developer Packs at https://aka.ms/msbuild/developerpacks
+  
+    Microsoft.Common.CurrentVersion.targets(3979, 5): [MSB3482] An error occurred while signing: SignTool.exe was not found at path C:\Users\leo77\Downloads\VirusTotalUploader-0.0.4\VirusTotalUploader-0.0.4\VirusTotal Uploader\VirusTotal Uploader\VirusTotal Uploader\signtool.exe.
+
+	
+	 <package id="System.Security.Cryptography.Algorithms" version="4.2.0" targetFramework="net461" />
+  <package id="System.Security.Cryptography.Encoding" version="4.0.0" targetFramework="net461" />
+  <package id="System.Security.Cryptography.Primitives" version="4.0.0" targetFramework="net461" />
+  <package id="System.Security.Cryptography.X509Certificates" version="4.1.0" targetFramework="net461" />
+  
+  C:\Users\leo77\Downloads\VirusTotalUploader-0.0.4\VirusTotalUploader-0.0.4\VirusTotal Uploader\VirusTotal Uploader\VirusTotal Uploader\VirusTotal Uploader_TemporaryKey.pfxC:\Users\leo77\Downloads\VirusTotalUploader-0.0.4\VirusTotalUploader-0.0.4\VirusTotal Uploader\VirusTotal Uploader\VirusTotal Uploader\VirusTotal Uploader_TemporaryKey.pfx
+  
+  Severity	Code	Description	Project	File	Line	Suppression State
+Error		An error occurred while signing: Failed to sign bin\Debug\app.publish\VirusTotal Uploader.exe. SignTool Error: No certificates were found that met all the given criteria.	VirusTotal Uploader			
+
+can build 1.3 ,1.4     ... 1.0.84
+
+not 0.8 ,
+
+0.8 is already shitty new without menu and check before upload
+
+Severity	Code	Description	Project	File	Line	Suppression State
+Error	CS2015	'C:\Users\leo77\Downloads\VirusTotalUploader-0.0.7\VirusTotal Uploader\VirusTotal Uploader\VirusTotal Uploader\VirusTotal Uploader_TemporaryKey.pfx' is a binary file instead of a text file	VirusTotal Uploader	C:\Users\leo77\Downloads\VirusTotalUploader-0.0.7\VirusTotal Uploader\VirusTotal Uploader\VirusTotal Uploader\CSC	1	Active
+
+ to install SignTool.exe , install win 10 sdk -its included , and to install the sdk just install visual studio - its in the components . 
+ and need to put the exe in the project folder
+ 
+ end got working 
+ 
+ this is a mod from the 0.7 version , i only edited the Form1.cs file to not ask to reupload just open the result directly when found
+
+im bouilding it in jetbrains rider
+
+need to install that to build https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net461-developer-pack-offline-installer
+
+and the win sdk for the signing tool , https://developer.microsoft.com/pt-br/windows/downloads/windows-10-sdk/ . -the dotne-framework is included here also
+
+https://github.com/SamuelTulach/VirusTotalUploader/issues/69
+
+leao-nardo commented 2 hours ago
+i tring to build older versions up to 0.0.7 but gives this error
+
+Error An error occurred while signing: Failed to sign bin\Debug\app.publish\VirusTotal Uploader.exe. SignTool Error: No certificates were found that met all the given criteria. VirusTotal Uploader
+
+how do i disable this signing need to build it ? i using vs 2019 , i not quite failiar with C# , when i search online the signing tab on proprieties is not present in vs2019 anymore.
+
+@leao-nardo
+ 
+Author
+leao-nardo commented 10 minutes ago
+i solved. i just installed the vs2019 and i found now in the installer that the clickonce thing need to be clicked to install , so i did and now i can unselect the signing and build normally
