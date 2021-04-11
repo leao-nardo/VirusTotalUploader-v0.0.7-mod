@@ -1,9 +1,10 @@
 this project is based on an older version of this other project https://github.com/SamuelTulach/VirusTotalUploader
-i made this because i didnt liked the many changes that were being made on the original so i copied this version v0.0.7 that is the last one that work as i prefer. i see many people also disliked the changes so fell free to use this one and send ideas and pull here too.
 
-in summary, 
+I made this because i didnt liked the many changes that were being made on the original so i copied this version v0.0.7 that is the last one that work as i prefer. i see many people also disliked the changes so fell free to use this one and send ideas and pull here too.
+
+In summary, 
 this version have the "scan with vt" link in the first menu on mouse right click and not in the "send to" menu
-and it checks if the file is already in vt site, if tis in the site it opens the result in vt withou uploading again (this is my little mod, in the original it asks to result or upload again, so i skipped that to be simpler, faster, more automatic, and to save bandwidth in our pc and vt site , this is good for us and for then, btw its a free service that we use is good to avoid work on there reuploading files that are already there)
+and it checks if the file is already in vt site, if it is, it opens the result in vt withou uploading again (this is my little mod, in the original it asks to result or upload again, so i skipped that to be simpler, faster, more automatic, and to save bandwidth in our pc and vt site , this is good for us and for then, btw its a free service that we use is good to avoid work on there reuploading files that are already there)
 
 
 # VirusTotal Uploader
