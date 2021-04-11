@@ -1,4 +1,12 @@
-﻿# VirusTotal Uploader
+this project is based on an older version of this other project https://github.com/SamuelTulach/VirusTotalUploader
+i made this because i didnt liked the many changes that were being made on the original so i copied this version v0.0.7 that is the last one that work as i prefer. i see many people also disliked the changes so fell free to use this one and send ideas and pull here too.
+
+in summary, 
+this version have the "scan with vt" link in the first menu on mouse right click and not in the "send to" menu
+and it checks if the file is already in vt site, if tis in the site it opens the result in vt withou uploading again (this is my little mod, in the original it asks to result or upload again, so i skipped that to be simpler, faster, more automatic, and to save bandwidth in our pc and vt site , this is good for us and for then, btw its a free service that we use is good to avoid work on there reuploading files that are already there)
+
+
+# VirusTotal Uploader
 ![screenshot](https://i.imgur.com/AoYrHye.png)
 
 VirusTotal Uploader is open-source application written in C# and WinForms for uploading files to VirusTotal service. It has a great and simple design with drag and drop interface. It is easy to use and you can avoid many viruses with it!
@@ -10,8 +18,6 @@ VirusTotal Uploader is open-source application written in C# and WinForms for up
 ## Warning
 This is not officially supported application. It was created, because official VirusTotal desktop app is unmaintained. If you are afraid you can build it from source by yourself. Also please don´t download it from any 3d party sites.
 
-## Download
-Please go to [releases page](https://github.com/SamuelTulach/VirusTotalUploader/releases) to download compiled app and installer. **Don´t forget to star the project!**
 
 ## How to get API key
 It is really simple! All you need to do is to go to [VirusTotal official page](https://www.virustotal.com/), create profile and copy your key.
@@ -29,10 +35,6 @@ Alternatively you can add VirusTotal Uploader to file content menu and click on 
 
 ## Contributing
 If you have any idea how to make this app better, please create pull request. If you find any bug, please create issue.
-
-## Help
-If you want to help this project, please **star this repo**.
-If you want to support me, [you can use my PayPal](https://www.paypal.me/SamuelTulach).
 
 ## TODO
 
